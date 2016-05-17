@@ -15,7 +15,7 @@ var
 		jade : {
 			location: 'jade/*.jade',
 			compiled: 'jade/*.jade',
-			destination: 'html'
+			destination: ''
 		},
 
 		scss : {
@@ -25,10 +25,11 @@ var
 		},
 
 		browserSync : {
-			baseDir : 'html',
-			watchPaths : ['html/*.html', 
-						  'css/**/*.css', 
-						  'js/**/*.js']
+			baseDir : '',
+			watchPaths : ['*.html', 
+						  'css/*.css',
+						  "scss/*.scss",
+						  'js/*.js']
 		},
 
 		compile__css : {
